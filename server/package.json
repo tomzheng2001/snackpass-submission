@@ -1,0 +1,32 @@
+{
+  "name": "tom_zheng",
+  "version": "1.0.0",
+  "description": "![Image of Snackpass](https://www.snackpass.co/static/media/logo_round_2.d74f1dd2.png)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snackpass-interviews/Tom_Zheng.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snackpass-interviews/Tom_Zheng/issues"
+  },
+  "homepage": "https://github.com/snackpass-interviews/Tom_Zheng#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^11.0.0",
+    "express": "^4.17.2",
+    "formidable": "^2.0.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

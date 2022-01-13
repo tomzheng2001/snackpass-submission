@@ -1,0 +1,22 @@
+item_id,name,price,photo,restaurant_id,last_purchased
+1,Mango Chutney,5.95,mango.jpg,1,2022-01-12 18:11:33
+2,Onion Chutney,8.95,onion.jpg,1,2022-01-12 18:11:33
+3,Mint Sauce,11.95,mint.jpg,1,2022-01-12 18:11:33
+4,Lime Pickle,2.95,lime.jpg,1,2022-01-12 18:11:33
+5,Plain Papadum,3.95,papadum.jpeg,1,2022-01-12 18:11:33
+6,Lemon Rice,5.95,lemonrice.jpg,1,2022-01-12 18:11:33
+7,Tandoori Chicken,8.95,tandoori.jpg,1,2022-01-12 18:11:33
+8,Bombay Aloo,9.95,bombay.jpg,1,2022-01-12 18:11:33
+9,Curry,1.95,curry.jpg,1,2022-01-12 18:11:33
+10,Tandoori Fish Karahi,5.95,tandoorifish.jpg,1,2022-01-12 18:11:33
+11,Keema Naan,7.95,naan.jpg,1,2022-01-13 22:34:01
+12,Mushroom Rice,2.95,mushroomrice.jpg,1,2022-01-13 22:34:01
+13,Saag Paneer,4.95,saag.jpg,1,2022-01-13 22:34:01
+14,Butter Chicken,8.95,butterchicken.jpg,1,2022-01-13 22:34:01
+15,Chicken Balti,9.95,chickenbalti.jpg,1,2022-01-13 22:34:01
+16,Chapati,2.95,chapati.jpg,1,2022-01-12 5:43:50
+17,Vegetable Curry,5.95,vegetablecurry.jpg,1,2022-01-12 5:43:50
+18,Madras,7.95,madras.jpg,1,2022-01-12 5:43:50
+19,Mixed Raita,8.95,raita.jpg,1,2022-01-12 5:43:50
+20,Lamb Chilli Masala,8.95,lambchili.jpg,1,2022-01-12 5:43:50
+21,Lamb Balti,1.95,lambbalti.jpg,1,2022-01-12 5:43:50

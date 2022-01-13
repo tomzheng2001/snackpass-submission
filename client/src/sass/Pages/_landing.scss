@@ -1,0 +1,75 @@
+.landing {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        display: flex;
+        justify-content: space-around;
+        padding: 3rem 1rem;
+        background-color: $main-color;
+
+        h1 {
+            text-align: center;
+            align-self: center;
+            font-family: "Mochiy Pop P One";
+            letter-spacing: 0.2rem;
+            font-size: 2.5rem;
+        }
+
+        &-dropdown {
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+            gap: 0.6rem;
+
+            label {
+                font-family: "Raleway";
+                font-size: 1rem;
+            }
+
+            select {
+                appearance: none;
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                margin: 0;
+                outline: none;
+                border: 2px solid $secondary-color;
+                border-radius: 0.5rem;
+                padding: 0.5rem 1rem;
+                padding-right: 1rem;
+                cursor: pointer;
+                line-height: 1.1;
+                background-color: #fff;
+                font-family: "Raleway";
+                font-size: 1.5rem;
+            }
+        }
+
+        &-buttons {
+            width: 20%;
+            display: flex;
+            gap: 3rem;
+
+            button {
+                font-family: "Raleway";
+                font-weight: 400;
+                font-size: 1.5rem;
+                padding: 0.5rem 1.5rem;
+                border-radius: 1rem;
+                cursor: pointer;
+                border: 2px solid $secondary-color;
+            }
+        }
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 12vh;
+        gap: 10%;
+        padding: 5rem;
+    }
+}
