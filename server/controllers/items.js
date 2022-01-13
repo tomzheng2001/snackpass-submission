@@ -23,9 +23,10 @@ const listTrendingItems = (_, res) => {
 };
 
 const getRecentPurchased = (req, res) => {
+
     mySQLConnection.query(
         `SELECT sum(b.quantity) AS quantity FROM orders as a, orderItems as b
-		WHERE a.order_id = b.order_id and b.item_id = 1 AND
+		WHERE a.order_id = b.order_id and b.item_id = ? AND
         a.created >= NOW() - INTERVAL 2 DAY;`,
             [req.item.item_id],
         (err, results) => {
