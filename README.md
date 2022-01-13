@@ -51,7 +51,7 @@ You may be as verbose as you would like when providing details on approach, setu
 1. I used a React frontend with a NodeJS backend and MySQL as the database. For the DB setup, I created 4 tables: restaurants, items, orders, and orderItems.
 Since I originally planned out more features but didn't have time to finish them due to other commitments some of the tables are not utilized.  To display the 
 items, I simply pulled the rows from the items table and displayed them.  To get the recently purchased, I used a SQL query to get the sum(quantity) on all items
-that matched the appropriate item id and a cross join with the order table to make sure they were within the past 48 hours.  I heuristic I used to sort items were
+that matched the appropriate item id and a cross join with the order table to make sure they were within the past 48 hours.  The heuristic I used to sort items was
 first sorting by the most purchased within the last 24 hours and then breaking ties by the most recently purchased. I also added a feature to allow adding items
 directly from the UI and uploading image although it is a bit buggy but should be fine for an MVP.  If I had more free time to work on it, I would probably finish up the 
 add items feature and the purchase items feature as well as allow sorting by restaurant, which currently doesn't work although the dropdown appears on the frontend. 
