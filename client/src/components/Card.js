@@ -41,7 +41,7 @@ const Card = (props) => {
                     <div className="card__footer-tags">
                         
                         <p>{getLastPurchased(props.lastpurchased)}</p>
-                        <p>{`${numPurchasedRecent} purchased recently`}</p>
+                        <p>{`${numPurchasedRecent ? numPurchasedRecent : 0} purchased recently`}</p>
                     </div>
                 </div>
                 <h3 className="card__footer-price">{"$" + props.price}</h3>

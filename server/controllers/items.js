@@ -6,10 +6,11 @@ import * as fs from 'fs';
 
 const listTrendingItems = (_, res) => {
     mySQLConnection.query(
-        `SELECT * FROM items 
+        `SELECT * FROM items as i
         WHERE last_purchased >= now() - INTERVAL 2 DAY
-        ORDER BY (SELECT COUNT(*) AS recent FROM items
-        WHERE last_purchased >= now() - INTERVAL 1 DAY), last_purchased DESC`,
+        ORDER BY (SELECT sum(b.quantity) AS quantity FROM orders as a, orderItems as b
+		WHERE a.order_id = b.order_id and b.item_id = i.item_id AND
+        a.created >= NOW() - INTERVAL 1 DAY) DESC, last_purchased DESC`,
         // Order by most purchased in last 24 ours, and break ties by last purchase date
         (err, results) => {
             if (err) {
